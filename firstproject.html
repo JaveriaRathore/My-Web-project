@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  background-image: url('https://img.freepik.com/free-vector/gradient-abstract-wireframe-background_23-2149009903.jpg?semt=ais_hybrid&w=740');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: #3399ff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a {
+  color: #ffffff;
+  font-weight: bold;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.search-bar {
+  display: flex;
+  margin: 10px 0;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 300px;
+}
+
+.search-bar input {
+  padding: 7px;
+  background-color: transparent;
+  border: 1px solid #cc0066;
+  color: white;
+  border-radius: 3px 0 0 3px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-bar button {
+  padding: 8px 17px;
+  background-color: #cc0066;
+  color: white;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.web {
+  width: 600px;
+  padding-top: 30px;
+  flex: 1 1 300px;
+}
+
+.web h1 {
+  margin: 5px 0;
+}
+
+.web p {
+  margin-top: 3px;
+}
+
+.web button {
+  color: white;
+  background-color: #3399ff;
+  padding: 10px 30px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.login-box {
+  width: 280px;
+  background-color: #ff99cc;
+  color: white;
+  margin-left: auto;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.login-here {
+  background-color: #cc0066;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.login-box input {
+  margin-bottom: 15px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid #cc0066;
+  width: 100%;
+  color: white;
+  box-sizing: border-box;
+}
+
+.login-box button {
+  padding: 5px 20px;
+  border-radius: 10px;
+  background-color: #cc0066;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-box p {
+  text-align: center;
+  margin: 10px 0 5px 0;
+}
+
+.login-box a {
+  color: #cc0066;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-box a:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Responsive Fixes */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .search-bar input,
+  .search-bar button {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+
+  .web {
+    width: 100%;
+  }
+
+  .web h1 {
+    font-size: 40px !important;
+    line-height: 1.3;
+    word-break: break-word;
+  }
+  .login-box {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">PraRoz🌍</div>
+  <nav>
+    <a href="#">HOME</a>
+    <a href="#">ABOUT</a>
+    <a href="#">SERVICE</a>
+    <a href="#">DESIGN</a>
+    <a href="#">CONTACT</a>
+  </nav>
+  <div class="search-bar">
+    <input type="text" placeholder="Type to search">
+    <button>Search</button>
+  </div>
+</header>
+
+<div class="container">
+  <div class="web">
+    <h1 style="font-size: 50px; color: white;">Web Design And</h1>
+    <h1 style="font-size: 80px; color: #3399ff;">Development</h1>
+    <h1 style="font-size: 50px; color: white;">course</h1>
+    <p style="font-size: 20px; color: white;">
+      Web design is a specialisation of the design stream. They also use HTML, CSS, WYSIWYG editing software,
+      mark up validators etc., to create design elements.
+    </p>
+    <button>Join Us</button>
+  </div>
+
+  <div class="login-box">
+    <div class="login-here">Login Here</div>
+    <form>
+      <input type="text" placeholder="username">
+      <input type="password" placeholder="password">
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account?</p>
+    <p><a href="#">Sign Up</a> here</p>
+  </div>
+</div>
+
+</body>
+</html>
